@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  scrollbar-width: thin;
+  user-select: none;
+  /* font-family: "Ubuntu", sans-serif; */
+}
+h1 {
+  font-weight: 400;
+}
+body {
+  background-color: #f4f4f4;
+}
+.row {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: #ddd;
+}
+.dropdown-item {
+  font-size: 18px;
+}
+.navbar {
+  width: 100%;
+  /* height: 100px; */
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.4s;
+}
+.whiteNav.navbar {
+  background-color: #fff;
+}
+.navbar-img {
+  height: 70px;
+}
+#navbarContent {
+  background-color: #fff;
+  color: #fff;
+  padding: 15px;
+}
+.home #navbarContent {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 15px;
+}
+.home .navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar-img,
+.navbar-toggler {
+  padding: 0 20px;
+}
+.home .navbar-toggler {
+  color: white;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.nav-link {
+  color: #222;
+}
+.home .nav-link {
+  color: #fff;
+}
+.nav-link:hover,
+:focus,
+:target {
+  color: #b99664 !important;
+}
+.navbar-scrolled {
+  background-color: #444;
+  color: #222;
+}
+.mouseover {
+  background-color: #444;
+  color: #222;
+}
+.bottom-nav {
+  display: flex;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.bottom-nav div {
+  padding: 10px;
+}
+.bottom-nav a {
+  font-size: 18px;
+}
+.dots {
+  width: 20px;
+  filter: invert(64%) sepia(12%) saturate(1287%) hue-rotate(356deg)
+    brightness(95%) contrast(85%);
+}
+.bottom-nav-active {
+  color: #b99664;
+  cursor: pointer;
+}
+/* .cover {
+  display: block;
+  width: 100%;
+  max-height: 850px;
+  background-color: #000;
+  filter: brightness(0.8);
+} */
+.skola {
+  font-size: 32px;
+  max-height: max-content;
+  width: 100%;
+  /* padding: 50px 0; */
+}
+.skola img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main {
+  padding-bottom: 80px;
+  margin-top: 100px;
+}
+.home-slider .blaze-slider img {
+  position: relative;
+  background-color: #000;
+  filter: brightness(50%);
+}
+/* .main-home {
+  position: relative;
+} */
+.main-home .blaze-track {
+  height: 950px;
+  width: 100%;
+}
+.main-kontakt {
+  min-height: 100vh;
+  padding-top: 25vh;
+  margin-top: 0;
+  background-color: #111;
+  font-size: 20px;
+}
+.main-kontakt h1 {
+  color: #fff;
+}
+.main-kontakt img {
+  width: 100%;
+  object-fit: cover;
+}
+.main-kontakt i {
+  padding-right: 10px;
+}
+.main-kontakt .card-item-har {
+  border: 20px solid #111;
+}
+.main-kontakt .blaze-slider {
+  border: 20px solid #111;
+  background-color: #111;
+}
+.uvod {
+  color: white;
+  text-align: center;
+  padding: 20px 20vw;
+}
+.home-slider div.position-absolute {
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  bottom: 50%;
+  padding: 0 30vw;
+}
+.home-slider a {
+  margin-top: 300px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #947851;
+  border: 0;
+  color: #222;
+}
+.home-slider a:hover {
+  color: white;
+}
+.position-relative img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.skola .position-absolute {
+  color: white;
+  font-size: 24px;
+  bottom: 10%;
+  left: 10vw;
+}
+.skola .position-absolute button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: max-content;
+  background-color: #947851;
+  border: 0;
+  font-size: 18px;
+  color: #222;
+}
+.skola button:hover {
+  color: white;
+}
+.card-item {
+  position: relative;
+  height: 600px;
+  min-width: 250px;
+  padding: 0;
+  border-radius: 40px;
+  background-color: #fff;
+  border: 20px solid #f4f4f4;
+}
+.card-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card-item.kat {
+  height: 550px;
+}
+.card-nav i {
+  font-size: 32px;
+  color: #f4f4f4;
+  cursor: pointer;
+  padding: 5px;
+}
+.blaze-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.blaze-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.card-content {
+  padding: 0 20px;
+}
+.card-price {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+.card-najam {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+.card-item span {
+  background-color: #dfc49a;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+/*Harmonika zasebno*/
+.card-item-har {
+  height: max-content;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #fff;
+  border: 20px solid #f4f4f4;
+}
+.card-item-har img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-item-har button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: max-content;
+  background-color: #b99664;
+  border: 0;
+  font-size: 18px;
+  color: #fff;
+}
+.card-item-har button:hover {
+  color: #222;
+}
+.har {
+  border-radius: 40px;
+  background-color: #fff;
+  border: 20px solid #f4f4f4;
+}
+.har img {
+  border-radius: 20px;
+}
+.msg {
+  color: #333;
+}
+footer {
+  background-color: #111;
+  padding: 120px 0;
+}
+footer h3,
+h4 {
+  color: #947851;
+  font-size: 22px;
+}
+footer div,
+a {
+  font-size: 20px;
+  color: #777;
+}
+footer div:hover,
+a:hover {
+  color: #999;
+}
+footer i {
+  padding-right: 10px;
+}
+.socials i {
+  font-size: 30px;
+}
+@media screen and (max-width: 400px) {
+  * {
+    margin: 0;
+  }
+  /* .navbar {
+    height: 65px;
+  } */
+  .navbar-img {
+    height: 50px;
+  }
+  .card-item-har.content {
+    height: max-content;
+  }
+  footer a,
+  h3,
+  h4 {
+    font-size: 18px;
+  }
+  .home.navbar {
+    background-color: #444;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bottom-nav {
+    display: none;
+  }
+  .home-slider div.position-absolute {
+    font-size: 14px;
+    top: 20%;
+    padding: 0 50px;
+  }
+  .skola h2 {
+    display: none;
+  }
+  .uvod {
+    padding: 20px 10vw;
+  }
+}
+.fa-magnifying-glass.position-absolute {
+  right: 15px;
+  top: 300px;
+  color: white;
+  font-size: 26px;
+  padding: 10px;
+}
